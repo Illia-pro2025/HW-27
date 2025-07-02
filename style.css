@@ -1,0 +1,50 @@
+.like-item {
+  background-color: gray;
+  width: 30px;
+  height: 300px;
+  margin-top: 100px;
+  margin-left: 100px;
+  position: relative;
+}
+
+.sublist {
+  position: absolute;
+  display: none;
+  padding: 20px;
+  margin-left: 30px;
+  width: 170px;
+  height: 260px;
+  left: 0;
+  top: 0;
+  background-color: gray;
+  transform: left;
+}
+
+.link-like {
+  margin-top: 100px;
+  writing-mode: vertical-lr;
+  margin-left: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.link {
+  color: white;
+}
+.like-item:hover .sublist,
+.like-item:focus .sublist {
+
+  transition: transform 300ms ease-in;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.like-item:hover .link-like,
+.like-item:focus .link-like {
+color: gray;
+
+}
+.icon{
+  width: 15px;
+  height: 10px;
+  fill: orange;
+}
